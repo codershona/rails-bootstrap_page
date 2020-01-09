@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BootstrapPage</title>
+    <title>Rails 5 Bootstrap Page App</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,7 +12,7 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Python 4 </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -20,20 +20,20 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Ruby <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Machine Learning</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Html & CSS
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">SASS</a>
+          <a class="dropdown-item" href="#">Bootstrap 4 & 3</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">SCSS framework and more</a>
         </div>
       </li>
       <li class="nav-item">
@@ -51,14 +51,31 @@
     <div class="container">
       <!-- Content here *layout,grid,column added-->
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-lg-8"> <!--sm has been deleted,and now lg added finally -->
        <%= yield %>
 
     </div>
-   <div class="col-sm-4">
+   <div class="col-lg-4"> <!--sm has been deleted,and now lg added finally  -->
     <div class="sidebar">
       <h3>Rails Sidebar</h3>
       <p>Click on here to see page. </p>
+
+      <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn btn-secondary">Perl Language</button>
+  <button type="button" class="btn btn-secondary">Lisp Language</button>
+
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Back end Language
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="#">Java Spring MVC</a>
+      <a class="dropdown-item" href="#">PHP Laravel Framework and others</a>
+    </div>
+  </div>
+</div>
+
+
     </div>
     </div>
     </div>
