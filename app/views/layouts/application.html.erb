@@ -11,9 +11,18 @@
 
   <body>
     <div class="container">
-      <!-- Content here -->
+      <!-- Content here *layout,grid,column added-->
+      <div class="row">
+        <div class="col-sm-8">
        <%= yield %>
+
     </div>
-    
+   <div class="col-sm-4">
+    <div class="sidebar">
+      <h3>Rails Sidebar</h3>
+      <p>Click on here to see page. </p>
+    </div>
+    </div>
+    </div>
   </body>
 </html>
