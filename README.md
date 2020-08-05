@@ -3,8 +3,6 @@
 ## Project: Rails Bootstrap Page App
 ## Styling the Application using Bootstrap 4
 
-## Builded by Falguni Islam(Software Developer)
-
 ## Run rails s
 
 
